@@ -5,6 +5,19 @@
 .ct-webform {
   $root: &;
 
+  .form-checkboxes,
+  .form-radios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .ct-form-element {
+      margin-bottom: 0;
+      display: flex;
+    }
+  }
+
   @include ct-component-theme($root) using($root, $theme) {
     &#{$root}--with-background {
       @include ct-component-property($root, $theme, background-color);
