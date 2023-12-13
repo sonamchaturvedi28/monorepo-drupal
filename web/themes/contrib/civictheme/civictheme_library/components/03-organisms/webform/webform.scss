@@ -5,8 +5,8 @@
 .ct-webform {
   $root: &;
 
-  .form-checkboxes,
-  .form-radios {
+  #{$root}__checkboxes,
+  #{$root}__radios {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
